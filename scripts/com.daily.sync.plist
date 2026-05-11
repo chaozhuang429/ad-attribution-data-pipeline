@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.daily.sync</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/bash</string>
+        <string>/Users/macmini/.hermes/skills/data-pipeline/s3-daily-sync/scripts/daily_sync.sh</string>
+    </array>
+    <key>StartCalendarInterval</key>
+    <!-- UTC 01:50 = 北京时间 09:50 -->
+    <dict>
+        <key>Hour</key>
+        <integer>9</integer>
+        <key>Minute</key>
+        <integer>50</integer>
+    </dict>
+    <key>RunAtLoad</key>
+    <false/>
+    <key>StandardOutPath</key>
+    <string>/Users/macmini/.hermes/skills/data-pipeline/s3-daily-sync/scripts/daily_sync_launchd.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/macmini/.hermes/skills/data-pipeline/s3-daily-sync/scripts/daily_sync_launchd.err</string>
+</dict>
+</plist>
